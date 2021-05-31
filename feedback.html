@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="utf-8">
+<!--css-->
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen">
+<!--js-->
+<script type="text/javascript" src="js/jquery-1.7.1.min.js" ></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+
+<script>
+    jQuery(window).load(function () {
+        jQuery('.flexslider').flexslider({
+            animation: "fade",
+            slideshow: true,
+            slideshowSpeed: 7000,
+            animationDuration: 600,
+            prevText: "",
+            nextText: "",
+            controlNav: false
+        })
+
+
+
+    });
+	</script>
+<SCRIPT language="javascript">
+function check()
+{
+var d=data.vname;
+var d1=data.vname1;
+var ph=data.phno;
+var emailid=data.email;
+var S2=data.S1;
+var addr=data.add
+if(d.value=="")
+{
+alert("First name field should not be left blank");
+d.focus();
+return false;
+}
+if(!(isNaN(d.value)))
+{
+alert("please enter the alphabet");
+d.focus();
+return false;
+}
+
+if(d1.value=="")
+{
+alert("Last name field should not be left blank");
+d1.focus();
+return false;
+}
+if(!(isNaN(d1.value)))
+{
+alert("please enter the alphabet");
+d1.focus();
+return false;
+}
+if(ph.value=="")
+{
+alert("Please enter your phone no");
+ph.focus();
+return false;
+}
+if(isNaN(ph.value))
+{
+alert("please enter the digits");
+ph.focus();
+return false;
+}
+if(ph.value.length<10)
+{
+alert("Enter 10 digits");
+ph.focus();
+return false;
+}
+
+if(addr.value=="")
+{
+alert("Address field should not be left blank");
+addr.focus();
+return false;
+}
+if(!(isNaN(addr.value)))
+{
+alert("please enter the alphabet");
+addr.focus();
+return false;
+}
+
+
+
+if(emailid.value=="")
+{
+alert("Please enter your email id");
+emailid.focus();
+return false;
+}
+
+if(emailid.value.indexOf("@")=="-1"||emailid.value.indexOf(".")=="-1")
+{
+alert("enter email in correct form");
+return false;
+} 
+if(S2.value=="")
+{
+alert("Please enter your comments");
+S2.focus();
+return false;
+}
+if(!(isNaN(S2.value)))
+{
+alert("please enter the alphabet");
+S2.focus();
+return false;
+}
+
+return true;
+}
+
+</script>
+
+
+</head>
+<body>
+
+<!--==============================header=================================-->
+<header>
+  <div class="line-top"></div>
+  <div class="main">
+    <div class="row-top">
+      <h1><a href="index.html"><img alt="" src="images/logo.gif"></a></h1>
+      <nav>
+        <ul class="sf-menu">
+          <li ><a href="index.html">Home</a></li>
+          <li><a href="#">Northern Dances</a> 
+          <ul>
+              <li><a href="JnK.html">Jammu n Kashmir</a></li>
+              <li><a href="HP.html">Himachal Pradesh </a>
+              <li><a href="Uttarakhand.html">Uttarakhand</a></li>
+              <li><a href="Haryana.html">Haryana</a></li>
+              <li><a href="Punjab.html">Punjab </a>
+              <li><a href="Rajasthan.html">Rajasthan</a></li>
+              <li><a href="UP.html">Uttar Pradesh</a></li>
+              <li><a href="Bihar.html">Bihar</a></li>
+              <li><a href="Jharkhand.html">Jharkhand</a></li>
+              <li><a href="Chhattisgarh.html">Chhattisgarh</a></li>
+              <li><a href="MP.html">Madhya Pradesh</a></li>
+
+
+            </ul>
+            </li>
+
+             <li><a href="#">Western Dances</a> 
+          <ul>
+              <li><a href="Maharashtra.html">Maharashtra</a></li>
+              <li><a href="Gujarat.html">Gujarat </a>
+                         </ul>
+            </li>
+
+
+              <li><a href="#" >Eastern  Dances</a> 
+          <ul>
+  
+              <li><a href="WB.html">West Bengal</a></li>
+              <li><a href="Orissa.html">Orissa </a>
+              <li><a href="Jharkhand.html">Jharkhand</a></li>
+              <li><a href="AP.html">Arunachal Pradesh</a></li>
+              <li><a href="Assam.html">Assam </a>
+              <li><a href="Manipur.html">Manipur</a></li>
+              <li><a href="Meghalaya.html">Meghalaya</a></li>
+              <li><a href="Mizoram.html">Mizoram</a></li>
+              <li><a href="Nagaland.html">Nagaland</a></li>
+              <li><a href="Sikkim.html">Sikkim</a></li>
+              <li><a href="Tripura.html">Tripura</a></li>
+
+
+            </ul>
+            </li>
+
+            <li class="active"><a href="#">Southern Dances </a> 
+          <ul>
+              <li><a href="AndP.html">Andhra Pradesh</a></li>
+              <li><a href="Karnataka.html">Karnataka </a>
+              <li><a href="Kerala.html">Kerala</a></li>
+              <li><a href="TN.html">Tamil Nadu</a></li>
+              
+
+            </ul>
+         
+      </nav>
+      <div class="clear"></div>
+    </div>
+  </div>
+ 
+</header>
+
+
+<!--==============================content=================================-->
+<section id="content"><div class="ic"></div>
+  <div class="border-horiz"></div>
+  <div class="container_12">
+
+<b><h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Feedback Form</h1></b><br>
+
+<form name="data" action="insert.asp" method="post" Onsubmit="return check()">
+<p style="text-align: left">First Name&nbsp;&nbsp; <input type="text" name="vname" size="26"></p>
+<p style="text-align: left">Last Name&nbsp;&nbsp;&nbsp; <input type="text" name="vname1" size="26"></p>
+<p style="text-align: left">Gender&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" value="V1" checked name="R1">Male&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<input type="radio" name="R1" value="V2">Female</p>
+<p style="text-align: left">Age&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<input type="text" name="aname" size="25"><br>
+</p>
+<p style="text-align: left">Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<input type="text" name="add" size="25" maxlength="50"></p>
+<p style="text-align: left">Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<input type="text" name="email" size="25"></p>
+<p style="text-align: left">Phone no.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<input type="text" name="phno" size="25"><br>
+</p>
+<p style="text-align: left">Quality Of Education <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox" value="Poor"name=c1>Poor &nbsp;&nbsp;&nbsp;
+<input type="checkbox" value="good" name=c2>Good&nbsp;&nbsp;&nbsp;
+<input type="checkbox" value="Excellent" name=c3>Excellent</p>
+<p style="text-align: left"></p>
+<p style="text-align: left">
+</p>
+<p style="text-align: left">Comments&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <textarea rows="3" name="S1" cols="20">write your comments</textarea>&nbsp;&nbsp;&nbsp; </p>
+<p style="text-align: left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font size="3">
+<input type="submit" name="Submit" value="SUBMIT"></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<font size="3"><input type="reset" name="Reset" value="RESET"></font>
+</p>
+</p>
+</form>
+</font>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <article class="grid_8">
+      
+    </article>
+    <div class="clear"></div>
+  </div>
+</section>
+<!--==============================footer=================================-->
+<footer>
+  <div class="main">
+    
+    <center> <p>Some traditions of the Indian classical dance are practiced in the whole Indian subcontinent, including Pakistan and Bangladesh, with which India shares several other cultural traits. Indian mythologies play significant part in dance forms of countries in South East Asia, an example being the performances based on Ramayana in Javanese dances.</p> </center>
+  </div>
+</footer>
+</body>
+</html>
